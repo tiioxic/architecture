@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --font-lite: .8rem;
+    --font-medium: 1rem;
+    --font-large: 1.2rem;
+    --clr-black: #000;
+}
+main{
+    padding-top: 2rem;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    z-index: 100;
+    height: 2rem;
+}
+header h1{
+    font-weight: 100;
+    font-size: var(--font-lite);
+}
+header h1 span{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 1rem;
+}
+header #nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-right: 3rem;
+
+}
+header #nav  a{
+    color:  var(--clr-black);
+text-transform: capitalize;
+    text-decoration: none;
+    
+}
+/* main */
+main #hero{
+    position: relative;
+}
+main #hero h2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #00000079;
+    width: fit-content;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: var(--font-large);
+}
+main #hero h2 span{
+    font-weight: 400;
+    background-color: #00000000;
+}
+/* house */
+
+main #section__house h2{
+    margin: 3rem 0 1rem 0;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+#content__house{
+    margin: 3rem 0;
+}
+main .house {
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+main .house figcaption{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    padding: .5rem .6rem;
+    background-color: #000;
+    font-size: var(--font-lite);
+}
+/* about */
+main #about h2{
+    font-weight: 200;
+    margin: 0 0 2rem 0;
+}
+main #about p{
+    font-size: var(--font-lite);
+    line-height: 1rem;
+    margin-top: 1.5rem ;
+}
+/* profile */
+
+main section #profile{
+margin-top: 2rem;
+}
+main section #profile figure figcaption{
+    margin: 1rem 0;
+    font-size: var(--font-large);
+}
+main section #profile h2{
+    font-weight: 100;
+    color: #333;
+    font-size: .7rem;
+}
+main section #profile p{
+    margin: 1rem 0;
+    font-size: var(--font-lite);
+
+}
+
+main section #profile input{
+    border: none;
+    padding: .5rem 0;
+    width: 100%;
+    margin-top: 0rem;
+}
+/* contact */
+main #form__contact{
+    margin-top: 3rem;
+
+}
+main #form__contact h2{
+    font-size: var(--font-large);
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+main #form__contact p{
+    font-size: var(--font-lite);
+    margin-top: 1rem;
+}
+main section #contact {
+    margin: 0rem 0 3rem 0;
+}
+main section #contact input{
+    width: 100%;
+    border-color: #e4e4e4;
+    padding: .7rem .4rem;
+    margin: .5rem 0;
+}
+main section #contact #form_send{
+    width: fit-content;
+    background-color: var(--clr-black);
+    color: #fff;
+    padding: .4rem 1rem;
+    border: none;
+}
+/* footer */
+footer{
+    background-color: var(--clr-black);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: center;
+}
+footer a{
+    color: #fff;
+    font-size: .4rem;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.dispNone{
+    display: none;
+}
+.img{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+/* house */
+main #section__house #content__house{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+    main #section__house #content__house .house{
+       max-width: 360px;
+        
+       
+    }
+    /* profile */
+    main #profile{
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap ;
+       gap: 1rem;
+    }
+    main #profile div{
+        max-width: 360px;
+    }
+    .figure__profile{
+        /* flex-direction: column; */
+        
+    }
+    .dispNone{
+        display: block;
+    }
+}
+@media (min-width: 1250px){
+        /* profile */
+           
+}
