@@ -58,14 +58,17 @@ main #hero h2{
     position: absolute;
     background-color: #00000079;
     width: fit-content;
-    padding: 1rem;
+    padding: 2rem;
     text-transform: uppercase;
     color: #fff;
     font-size: var(--font-large);
+    line-height: 0;
+    
 }
 main #hero h2 span{
     font-weight: 400;
     background-color: #00000000;
+    margin: 0 0 0 2rem;
 }
 /* house */
 
